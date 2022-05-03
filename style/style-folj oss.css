@@ -1,0 +1,146 @@
+.section-3 {
+    border-top: 2px solid rgb(196, 196, 196);
+}
+
+.section-3 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkred;
+    border-radius: 10px;
+    color: white;
+    align-self: baseline;
+    padding: 1rem;
+}
+
+.section-3 a {
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .7rem;
+}
+.fa-brands {
+    font-size: 2rem;
+    color: midnightblue;
+}
+
+@media (max-width: 599px) {
+
+    .section-3 a {
+        display: block;
+    }
+
+    .section-3 h1 {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .section-3 a {
+        display: block;
+    }
+
+    .section-3 h1 {
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+
+    .section-3 a {
+        display: block;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .section-3 {
+        display: flex;
+    }
+
+    .section-3 a {
+        transform: scale(0.8);
+    }
+
+    .section-3 h1 {
+        transform: scale(0.6);
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+
+    .section-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-3 a {
+        transform: scale(0.9);
+    }
+
+    .section-3 h1 {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 900px) and (max-width: 999px) {
+
+    .section-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-3 a {
+        transform: scale(0.9);
+    }
+
+    .section-3 h1 {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-3 a {
+        transform: scale(1);
+    }
+
+    .section-3 h1 {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+
+    .section-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-3 a {
+        transform: scale(1);
+    }
+
+    .section-3 h1 {
+        transform: scale(0.8);
+    }
+}
+
+/* @mixin for-big-desktop-up { */
+@media (min-width: 1800px) {
+    .section-3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-3 a {
+        transform: scale(1);
+    }
+
+    .section-3 h1 {
+        transform: scale(0.8);
+    }
+}
