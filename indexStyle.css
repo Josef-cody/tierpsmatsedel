@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* =========   navgation style   ==========*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(149, 99, 72);
+    min-height: 6vh;
+}
+.logo{
+    color: rgb(229, 229, 229);
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+.nav-link{
+    display: flex;
+    justify-content: space-around;
+    /* width: 30%; */
+}
+
+.nav-link a{
+    color: rgb(229, 229, 229);
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+} 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(229, 229, 229);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px){
+    .body{
+        overflow-x: hidden;
+    }
+.nav-link{
+    position:absolute;
+    right: 0;
+    height: 94vh;
+    background-color: rgb(153, 73, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    transform: translateX(100%);
+    transition: transform  0.5s ease-in;
+}
+.nav-link a{
+    font-size: 20px;
+}
+.nav-link li:hover{
+    filter: opacity(0.45);
+}
+.nav-link li{
+    opacity: 0;
+}
+.burger{
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+}
+@media screen and (max-width:1024px){
+    .nav-link{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        top: 6vh;
+    }
+    
+}
+@media screen and (min-width:1024px){
+    .nav-link{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        top: 6vh;
+    }
+}
+
+/* ===============  hero  =================== */
+.hero-img{
+   
+    width: 100%;
+    margin:auto;
+}
+.hero-img img{
+    width: 100vw;
+}
+body:after {
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+/* =============  main body section style  ================= */
+.parent {
+    background-color: rgb(20,40,100);
+    height:80vh;
+    width:80vw;
+    margin: 2rem auto;
+    position:relative;
+    
+  }
+  h1{
+    margin-left: 230px;
+    padding-top:80px;
+    color: white;
+    font-size:20px;
+  }
+  .child {
+    position:absolute;
+    top:0px;
+    background-color: rgb(256,0,0);
+    height:100%;
+    width:50%;
+    transition:transform 1s cubic-bezier(0.16, 0.54, 0.32, 1.28);
+  }
+  .parent:hover .child{
+    background-color: rgb(0,256,256);
+    transform:translateX(100%);
+  }
+
+  .element {
+    /* // Base element styles (these don't change depending on the state) */
+    width: 200px;
+    height: 200px;
+    /* // Styles for reduced motion (usually same as end position) */
+    background: lime;
+    transform: scale(0.8);
+    }
+    @media screen and (prefers-reduced-motion: no-preference) {
+    .element {
+    
+    transition: all 0.5s ease;
+  
+    
+    background: blue;
+    transform: none;
+    }
+    }
+    .container.in-view .element {
+   
+    background: lime;
+    transform: scale(0.8);
+    }
+
+    .text{
+        width: 10rem;
+       background-color: red;
+       padding: 2rem;
+    }
+
+    .box-f{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    .box{
+        width: 10vw;
+        height: 10vh;
+        background-color: brown;
+        margin: 2rem auto;
+    }

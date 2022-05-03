@@ -1,0 +1,30 @@
+/* 清除外边距： */
+body,p,ul,h1,h2,h3,h4,h5,h6,dl,dd {
+
+    margin: 0;
+    
+    }
+    
+    /*清除内边距：*/
+    
+    ul,ol{
+    
+    padding: 0;
+    
+    }
+    
+    /* 清除a标签下划线 */
+    
+    a{
+    
+    text-decoration: none;
+    
+    }
+    
+    /* 清除列表样式 */
+    
+    li{
+    
+    list-style: none;
+    
+    }
