@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TierpskommunKostenheten</title>
+    <link rel="stylesheet" href="./style/style-public.css">
+
+    <link rel="stylesheet" href="./style/kontakt-style.css">
+   
+    <link href="./icons/css/fontawesome.css" rel="stylesheet">
+    <link href="./icons/css/brands.css" rel="stylesheet">
+    <link href="./icons/css/solid.css" rel="stylesheet">
+    <link href="./icons/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="mainbody">
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html"><i class="fa-solid fa-house"></i>&nbsp Hem</a>
+            <a href="./vem vi ar.html"><i class="fa-solid fa-circle-user"></i>&nbsp Om oss</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>&nbsp Kontakt</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-utensils"></i>&nbsp Hungrig?
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#section-husmanskost">Husmanskost</a>
+                  <a href="#section-hamburgare">Hamburgare</a>
+                  <a href="#section-sushi">SUSHI</a>
+                  <a href="#section-pizza">PIZZA</a>
+                  <a href="#section-thai">Thaimat</a>
+                  <a href="#section-caffe">CAFFE</a>
+                </div>
+              </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <script>
+            function myFunction() {
+                let x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </header>
+    <!-- //top scroll -->
+    <button onclick="topFunction()" id="goTop" title="Go to top">Top</button>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("goTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script type="text/javascript" src="./js/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <main class="main-form">
+        <div class="container-form" data-aos="fade-up" data-aos-duration="1200"
+        data-aos-easing="ease-in-out" data-aos-offset="300">
+            <form action="https://getform.io/f/84b208cd-7623-4e4b-ba3d-2fc8d4b18318" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Först Namn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="först namn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Efter Namn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="efter namn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="e-mail">E-post</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" id="email" placeholder="E-post adressen.. ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Meddlande</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Hur kan vi hjälpa dig.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+<footer>
+    <!-- <div class="footer">
+        <div class="foot">
+            <ul >
+                <li><a href="http://www.tierp.se">Tierp.se</a></li>
+                <li><a href="https://www.livsmedelsverket.se/">Livsmedelsverket</a></li>
+            </ul>
+        </div> -->
+
+        <h5
+            style="text-align: center; font-size: 2vmin; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(0, 0, 0); color: white; padding: 30px;">
+            © 2022 Josef.Abliz
+            .All Rights reserved &nbsp TIERPS MATSEDEL</h5>
+    </div>
+
+</footer>
